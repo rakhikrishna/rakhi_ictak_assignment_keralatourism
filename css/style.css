@@ -1,0 +1,174 @@
+*{
+padding: 5px;
+margin: 0px;
+
+}
+
+.mymargin
+{
+margin: 30px;
+
+}
+a{
+
+    float: right;
+}
+body{
+background-size: cover;
+
+
+}
+.login-form
+    {
+      align-content: center;
+        border: solid 1px;
+     height: 500px;
+     width: 270px;
+     border-radius:10px ;
+     display :flex ;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 60px;
+     text-align: center;
+    }
+
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .container 
+{
+
+  position: absolute;
+  max-width: 100;
+ background-color:transparent ;
+ min-height: 120px;
+  margin:20px  auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+
+  
+
+}
+.container-fluid
+
+{text-shadow: teal;
+  text-align: center;
+ 
+  text-decoration:white;
+}
+.container .box  {
+    position: relative;
+   width: 400px;
+    
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+  .container .box .imgbox
+  {
+      position: relative;
+      
+
+  }
+
+  .container .box .imgbox img
+  {
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: 400px;
+      transition: transform 2s;
+  }
+  
+  .container .box:hover .imgbox img
+  {
+
+    transform: scale(1.2);
+  }
+  .container .box .details
+  {
+    position: absolute;
+    top: 5px;
+    bottom:5px;
+    left: 5px;
+    right: 5px;
+    background: rgba(0, 0,0, .8);
+    transform: scaleY(0);
+    transition: transform .5s;
+
+  }
+  .container .box:hover .details
+  {
+
+    transform: scaleY(1);
+
+  }
+  .container .box .details .content
+  {
+      position: absolute;
+      top: 50%;
+      transform:translateY(-50%);
+      text-align: justify;
+      padding: 15px;
+      color: #fff;
+  }
+  .container .box .details .content h5
+  {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      color: #ff0;
+  }
+  .container .box .details .content p
+  {
+      margin: 10px;
+    
+  }
+  .heading
+  {
+    text-align: justify;
+    margin: 30px;
+  }
+  .gallery
+  {
+margin-top: 50px;
+color:black;
+
+
+
+
+  }
+  .gallery .box
+  {
+    position: relative;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+  .gallery .box .img
+  
+  {padding: 10px;
+    margin:10px;
+    width: 10px;
+    height:10px;
+  }
+  .gallery .box  .content
+{
+  font-family: sans-serif;
+}
