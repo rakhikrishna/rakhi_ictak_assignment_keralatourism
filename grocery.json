@@ -1,0 +1,93 @@
+{
+    "grocery":[
+        {
+            "Name":"NAME",
+            "Quantity":"QUANTITY",
+            "Unit":"UNIT",
+            "Department":"DEPARTMENT",
+            "Notes":"NOTES"
+            
+            
+        },
+        {
+            "Name":"BASMATI RICE",
+            "Quantity":"5",
+            "Unit":"KG",
+            "Department":"Grocery",
+            "Notes":"India gate"
+            
+            
+        },
+
+        {
+            "Name":"POTATO",
+            "Quantity":"2",
+            "Unit":"KG",
+            "Department":"Vegetables",
+            "Notes":"fresh"
+            
+            
+        },
+
+
+        {
+            "Name":"TOMATO",
+            "Quantity":"1",
+            "Unit":"KG",
+            "Department":"Vegetables",
+            "Notes":"Organic"
+            
+            
+        },
+
+
+        {
+            "Name":"CORN FLAKES",
+            "Quantity":"1",
+            "Unit":"PACKET",
+            "Department":"Grocery",
+            "Notes":"Keloggs"
+            
+            
+        },
+
+        {
+            "Name":"MILK",
+            "Quantity":"2",
+            "Unit":"PACKET",
+            "Department":"Grocery",
+            "Notes":"MILMA"
+            
+            
+        },
+        {
+            "Name":"BANANA",
+            "Quantity":"1.5",
+            "Unit":"KG",
+            "Department":"fruits",
+            "Notes":"fresh"
+            
+            
+        },
+        {
+            "Name":"BREAD",
+            "Quantity":"1",
+            "Unit":"PACKET",
+            "Department":"grocery",
+            "Notes":"wheat"
+            
+            
+        },
+
+
+        {
+            "Name":"EGGS",
+            "Quantity":"10",
+            "Unit":"NUMBERS",
+            "Department":"Grocery",
+            "Notes":"ORGANIC"
+            
+            
+        }                   
+    ]
+}
