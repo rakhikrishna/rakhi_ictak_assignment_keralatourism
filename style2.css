@@ -6,10 +6,29 @@ body{
   background-repeat: repeat;
 
 }
-
+h1{
+  color:chocolate;
+}
 #demo{
   margin: 10px;
   font-size: large;   
+}
+p{
+  text-align: center;
+}
+.nav-link
+{
+    color:black;
+    font-weight: bold;
+}
+.nav-link #button
+{
+    background-color: transparent;
+}
+.navbar-brand
+{
+   
+    font-weight: bold;
 }
 #myUL
 {

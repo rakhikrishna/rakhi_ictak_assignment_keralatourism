@@ -7,7 +7,15 @@
 		
 	box-sizing: border-box;
 }
-
+h2
+{
+	color: chocolate;
+}
+h3{
+	text-align: center;
+	color:coral;
+	font-family:sans-serif;
+}
     .container
     {
         position: absolute;
@@ -31,7 +39,9 @@ body {
 }
 
 .container {
-	background-color: transparent;
+	background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
@@ -122,20 +132,6 @@ body {
 
 }
 
-.form-control .text.weak{
-	color:#ff4757;
-
-
-}
-
-.form-control .text.strong{
-	color:#ff4757;
-} 
-
-
-
-
-
 .form-control label {
 	display: inline-block;
 	margin-bottom: 5px;
@@ -157,7 +153,7 @@ body {
 .form-control input:focus {
 	outline: 0;
 	border-color: #777;
-	background-color: teal;
+	background-color:coral;
 }
 
 .form-control.success input {
@@ -199,24 +195,35 @@ body {
 
 .form button {
 	background-color: transparent;
-	border: 2px solid teal;
-	border-radius: 4px;
-	color: white;
+	border: 2px solid coral;
+	border-radius: 10px;
+	color: coral;
 	display: block;
-	font-family: inherit;
+	font-family:fantasy;
+	font-weight: bolder;
 	font-size: 20px;
 	padding: 10px;
 	margin-top: 20px;
 	width: 100%;
 	align-content: center;
 	text-decoration: none;
+	box-shadow: currentColor;
 	
+}
+.navbar-brand
+{
+	color:chocolate;
 }
 
 
 .form .container .button .register
 {
 	text-decoration: none;
+}
+.form-control .button:hover {
+	outline: 0;
+	border-color: #777;
+	background-color:coral;
 }
 
 .login_form #email_error,

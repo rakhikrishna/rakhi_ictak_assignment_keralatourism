@@ -23,12 +23,18 @@
 </head>
 <body background="./wooden.jpg">
     <!-- NavBar starts here -->
-
     <nav class="navbar navbar-light bg-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h2>TO DO LIST</h2></a>
-         
-          <a class="navbar-brand" href="./newlogin.html">LOGOUT</a>
+          <a class="navbar-brand">TO-DO LIST</a>
+          
+          <a class="nav-link" aria-current="page" href="./newtrialcopy.html">HOME</a>
+          
+          <a class="nav-link" aria-current="page" href="./add.html">ADD TASK</a>
+          <a class="nav-link" aria-current="page" href="./newlogin.html">LOGOUT</a>
+          
+
+        
+          
         </div>
       </nav>
 
@@ -36,11 +42,9 @@
     
     <div id="content">
         <div class="wrapper">
-            <h1>My To-Do List</h1>
-        <div class="inputField">
-        <input type="text" id="myInput" placeholder="Add a new task">
-        <button onclick="newElement()"class="addBtn">ADD</button>
-        </div>
+            <h1>To-Do List</h1>
+            <p id="date"></p>
+        
         
         <ul id="myUL">
         
@@ -67,5 +71,9 @@
 
     </div> 
     <script src="scripttodo.js"></script>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d;
+        </script>
 </body>
 </html>

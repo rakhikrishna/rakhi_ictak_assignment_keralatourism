@@ -1,9 +1,6 @@
 
 
 
-
-
-
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -13,6 +10,8 @@ const phonenumber = document.getElementById('phonenumber');
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
+
+	
 	
 	checkInputs();
 	
@@ -66,6 +65,7 @@ function checkInputs() {
 	} else {
 		setSuccessFor(phonenumber);
 	}
+	window.open('newlogin.html');
 }
 
 function setErrorFor(input, message) {
@@ -92,32 +92,4 @@ function isPassword(password) {
 
 
 
- //password strength
-const indicator=document.querySelector(".indicator");
-const input=document.querySelector(".input");
-const weak=document.querySelector(".weak");
-const medium=document.querySelector(".medium");
-const strong=document.querySelector(".strong");
-const itext=document.querySelector(".text");
-let regExpWeak = /[a=z]/;
-let regExpMedium = /\d+/;
-let regExpStrong = /[!,@,#,$,%,^,&,*,?,_,-,(,)]/;
-
-function trigger(){
-	if(input.value !="")
-	{
-		indicator.style.display ="block";
-		indicator.gstyle.display ="flex";
-		if(input.value.length <= 3 &&(input.value.match(regExpWeak) || input.value.match(regExpMedium) || input.value.match(regExpStrong)))no=1;
-		if(input.value.length >= 6 &&(input.value.match(regExpWeak) && input.value.match(regExpMedium) || input.value.match(regExpMedium)&& input.value.match(regExpStrong)))no=1;
-		if(no == 1)
-	{
-		weak.classList.add("active");
-		Text.style.display("block");
-		Text.textContent
-}
-	}
-	else{
-
-	}
-}
+ 
