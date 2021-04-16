@@ -1,8 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-@import"~bootstrap/dist/css/bootstrap.min.css";
-body{
-    background-color: azure;
-}
+
 .navbar-form input, .form-inline input {
     width:auto;
   }
@@ -80,34 +76,3 @@ body{
    border-radius: 20px;
   
   }
-  /* .wrapper
-  {
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px #000;
-    margin-left: 20%;
-    border: 1px solid grey;
-    ;
-    width: 500px;
-    height: 1000px;
-    
-    padding: 40px;
-  } */
- 
-  
-
-
-  
- 
-  
-  
- 
-  
-
-  
-  
-  
-  
- 
-  
-  
