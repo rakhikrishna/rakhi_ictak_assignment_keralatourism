@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/login">Login</a>
+        </li>
+        <li>
+          <a href="/signin">Signin</a>
+        </li>
+          
+        </ul>
+      
+    </nav>
+  </div>
+</header>
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h2>  PUSTHAKAM.IN</h2>
+          <p class="lead">knowledge everywhere...</p>
+        </h1>
+      </div>
+      
+      
+    </div> 
+  </div><!-- /cont -->
+  
+  <!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  
+    <div class="wrapper">
+              
+          <form method="POST" action="/add">
+            <div class="heading">Create a new account</div>
+            
+
+            <div class="form-group">
+                <label for="username" class="labels">Username:</label>
+                <br>
+                <input onkeyup="toggle();" type="text" name="username" class="form-control formbar w3-input" placeholder="john" id="user">
+                <br>
+               
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="email" class="labels">Email:</label>
+                <br>
+                <input onkeyup="toggle();" type="text" name="email" class="form-control formbar w3-input" placeholder="xyz@domain.com" id="email">
+                <br>
+                <label for="emailError" id="emailError"></label>
+            </div>
+                    
+          
+            
+            <br>
+            <div class="form-group">
+                <label for="password" class="labels">Password</label>
+                <br>
+                <input onkeyup="toggle();" type="password" name="password" placeholder="Password" id="pwd" class="form-control formbar w3-input">
+                <br>
+                <label for="pwderror" id="pwderror"></label>
+           
+                <br>
+                <div class="form-group">
+                    <label for="password" class="labels">Repeat Password</label>
+                    <br>
+                    <input onkeyup="toggle();" type="password" name="repeatpassword" placeholder="Password" id="pwd1" class="form-control formbar w3-input">
+                    <br>
+                    <label for="pwd1error" id="pwd1error"></label>
+                    <div class="form-group">
+                      <label for="phonenumber" class="labels">Phone number:</label>
+                      <br>
+                      <input onkeyup="toggle();" type="text" name="phonenumber" class="form-control formbar w3-input" placeholder="xxxxxxxxxx" id="phonenumber">
+                      <br>
+                      <label for="phonenumbererror" id="phonenumbererror"></label>
+                  
+                   
+                </div>
+           <br>
+           <br>
+           <br>
+
+                <button type="submit" class="btn" id="buttn" >SIGN UP</button>
+             
+        </form>
+      </div>
+          <!-- /loign form -->
+          
+          
+          <!-- <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a> -->
+        
+          
+        </div>
+      </div>
+                                                                                       
+                                                  
+                                                      
+    </div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+     <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+     <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- script references -->
+  <script>
+let email = document.getElementById("email");
+let pwd = document.getElementById("pwd");
+let pwd1 = document.getElementById("pwd1");
+let user = document.getElementById("user");
+let phonenumber = document.getElementById("phonenumber");
+
+let emailError = document.getElementById("emailError");
+let pwderror = document.getElementById("pwderror");
+let pwd1error = document.getElementById("pwd1error");
+let phonenumbererror=document.getElementById("phonenumbererror");
+
+function validate(){
+    let emregexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
+    let pwdexp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+    let phonenumberexp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+   
+
+    if(email.value == ""||pwd.value == ""||pwd1.value == ""||user.value ==""||phonenumber.value==""){
+            alert("Fields cannot be empty");
+            return false;
+    }
+
+    else if(!emregexp.test(email.value)){
+            emailError.innerHTML = "**Please add a valid email address";
+            emailError.style.color= "red";
+            email.style.border = "2px solid red";   
+            return false;
+    }
+   
+    else if(!pwd.value.match(pwdexp)){
+        pwderror.innerHTML = "**Password must be between 8 to 15 characters with at least one lowercase letter, one uppercase letter, one numeric digit, and one special character";
+        pwderror.style.color = "red";
+        pwd.style.border = "2px solid red";
+        return false;
+    }
+    else if(!pwd1.value.match(pwd.value) ){
+        pwd1error.innerHTML = "Password doesn't match";
+        pwd1error.style.color = "red";
+        pwd1.style.border = "2px solid red";
+        return false;
+    }
+    else if(!phonenumber.value.match(phonenumberexp)){
+            phonenumbererror.innerHTML = "**Please add a valid phone number";
+            phonenumbererror.style.color= "red";
+            phonenumber.style.border = "2px solid red";   
+            return false;
+    }
+    else{
+        return true;
+    }
+}
+
+  </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
